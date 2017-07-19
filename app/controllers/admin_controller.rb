@@ -20,9 +20,9 @@ class AdminController < ApplicationController
 
   private
 
-  def set_admin_ability
-    if admin_signed_in?
+  # def set_admin_ability
+    # if admin_signed_in?
       @current_ability ||= Ability.new current_admin
-    end
+    # end
   end
 end
